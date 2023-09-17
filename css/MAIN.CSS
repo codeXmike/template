@@ -45,6 +45,10 @@ a{
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
+.nav .nav-brand{
+    display: flex;
+    flex-direction: row;
+}
 .nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
@@ -144,7 +148,8 @@ main .blog-content .blog-title{
     padding: 2rem 0;
 }
 main .blog-content .btn-blog{
-    padding: .9rem 2rem;
+    padding: .3rem 1rem;
+    font-size: 2rem;
     background: var(--sky);
     margin: .5rem;
     border-radius: 19px;
