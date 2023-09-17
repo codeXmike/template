@@ -154,6 +154,13 @@ main .blog-content img{
 .collapse{
     height: 25rem;
 }
+main section .small-intro{
+    position: relative;
+    padding-top: 9rem;
+    text-align: center;
+    font-family: var(--Michael);
+    font-size: 2rem;
+}
 
 
 @media only screen and (max-width: 545px){
@@ -168,22 +175,12 @@ main .blog-content img{
     b.long{
         display: none;
     }
-
-
-}
-@media only screen and (max-width: 640px){
-    .nav .nav-menu, .nav-items{
-      flex-direction: column; 
-    }
-    .sign-up{
-        width: 400px;
-        
-        padding:3% 0%;
-        }
-    b.long{
-        display: none;
-    }
     .nav .toggle-collapse{
         display: initial;
     }
+    main section .small-intro{
+       
+        font-size: 1rem;
     }
+
+}

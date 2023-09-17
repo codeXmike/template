@@ -1,3 +1,14 @@
+const responsive = {
+    250:{
+        items: 1
+    },
+    500:{
+        items: 2
+    },
+    700:{
+        items: 3
+    }
+}
 $(document).ready(function(){
     
     $nav = $('.nav')
@@ -13,6 +24,7 @@ $(document).ready(function(){
         autoplayTimeout: 3000,
         dots: false,
         nav: true,
-        navText: ["<img src='./assets/nav2.png'>", "<img src='./assets/nav.png'>"]
+        navText: ["<img src='./assets/nav2.png'>", "<img src='./assets/nav.png'>"],
+        responsive: responsive
     });
 });
