@@ -5,24 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miko Templates Support</title>
     <link rel="icon" href="./assets/miko logo.png">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
 <style>
-    body{
-        background: rgb(149, 245, 245);
-    }
+    @import url("../css/fonts.css");
+body{
+background: var(--background);
+}
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+:root{
+    /*fants*/
+    --Michael:'Michael', cursive;
+    --Anton:'Anton', cursive;
+    --Josefin:'Josefin', cursive;
+    --Lexend:'Lexend', cursive;
+    --Livvic:'Livvic', cursive;
+
+    --nav-color: gray;
+    --sky: rgb(20, 200, 200);
+    --text-links: rgb(55, 56, 56);
+    --hover: rgb(241, 207, 13);
+
+    --background: rgb(140, 140, 140)
+}
+    a{
+    text-decoration: none;
+    color: var(--text-links);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*------nav----*/
+.nav{
+    background: var(--nav-color);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 12vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .nav-brand{
+    display: flex;
+    flex-direction: row;
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family:var(--Anton);
+
+}
+.nav .nav-items{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+.nav .nav-menu .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family:var(--Michael);
+    cursor: pointer;
+}
+.nav .nav-menu .nav-link:hover a{
+    color: var(--hover);
+}
+.nav .nav-menu .nav-link:hover{
+    
+    background-color: darkslategrey;
+}
+.nav .nav-menu{
+    justify-content:  space-between;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icon{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icon i{
+    color: rgb(10, 14, 32);
+    font-size: 2rem;
+}
     h1{
         text-align: center;
-        color: rgb(0, 121, 121);
+        color: var(--text-links);
     }
     h2{
         text-align: center;
-        color: rgb(0, 121, 121);
+        color: var(--text-links);
     }
     .account{
         padding: 11rem 0;
     }
+    .collapse{
+    height: 25rem;
+}
+    @media only screen and (max-width: 545px){
+    .nav .nav-menu, .nav-items{
+      flex-direction: column; 
+    }
+    .sign-up{
+        width: 400px;
+        
+        padding:3% 0%;
+        }
+    b.long{
+        display: none;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    }
+
+
+
 </style>
 <body>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <img src="./assets/miko logo.png" style="height: 50px; width: 50px; padding: 0.5rem 0.8rem 0rem 0rem;" alt="logo">
+                <a href="#" class="text-gray">MIKO TEMPLATE</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <a href="#">
+                        <li class="nav-link">
+                            <a href="index.html">Home</a>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link">
+                            <a href="about.html">About</a>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link">
+                            <a href="support.html">support</a>
+                        </li>
+                    </a>
+                    
+                   
+                </ul>
+                
+            </div>
+        </div>
+
+    </nav>
     
     <h1>support us </h1>
     <div class="account">
@@ -30,6 +185,9 @@
     <h2> OPay</h2>
     <h2>Nnamezie Michael Blessing</h2>
     </div>
+    
+    <script src="./js/jquery3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
     
 </body>
 </html>
