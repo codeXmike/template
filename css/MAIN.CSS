@@ -135,6 +135,11 @@ main .blog{
 
 main .blog .blog-post{
     padding-top: 6rem;
+    
+}
+main .blog .blog-content img{
+    border-radius: 0px 0px 25px 25px;
+    
 }
 main .blog-post .blog-content{
     display: flex;
