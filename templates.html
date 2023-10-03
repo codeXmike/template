@@ -3,68 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get miko templates</title>
+    <title>Miko templates</title>
     <link rel="icon" href="./assets/miko logo.png">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/MAIN.CSS">
 </head>
 <style>
-   
-
-    .telegram{
-        text-align: center;
-        padding: 3rem 0rem;
-    }
-    .telegram a{
-text-decoration: none;
-color: var(--text-links);
-
-
-    }
-    .telegram a:hover{
-
-color: rgb(30, 0, 138);
-
-    }
-    .whatsapp{
-        text-align: center;
-        padding: 4rem 0rem;
-    }
-    .whatsapp a{
-        color: var(--text-links);
-        text-decoration: none;
-    }
-    .whatsapp a:hover{
-        color: rgb(30, 0, 138);
-    }
-    hr{
-        height: 10px;
-        background-color:  var(--text-links);
-    }
-    .collapse{
-    height: 25rem;
-}
-
-    @media only screen and (max-width: 545px){
-    .nav .nav-menu, .nav-items{
-      flex-direction: column; 
-    }
-    .sign-up{
-        width: 400px;
-        
-        padding:3% 0%;
-        }
-    b.long{
-        display: none;
-    }
-    .nav .toggle-collapse{
-        display: initial;
-    }
-
-    }
-
-
-
+    
 </style>
 <body>
     <nav class="nav">
@@ -113,20 +58,53 @@ color: rgb(30, 0, 138);
         </div>
 
     </nav>
-    <h1 style="text-align: center; color: rgb(55, 56, 56); font-size: 2rem;">Contact Us</h1>
-<div class="telegram">
-    <a href="https://t.me/codeXmike"><h2>Via Telegram<i class="fa-brands fa-telegram" style="padding-left: 10px; padding-top: 3px;"></i></h2> </a>
-    
+    <main>
+        <section>
+            <div class="search">
 
-</div>
-<hr>
-    <div class="whatsapp">
-        <a href="https://wa.me/+2348053057575"><h2>Via Whatsapp<i class="fa-brands fa-whatsapp" style="padding-left: 10px; padding-top: 3px;"></i></h2></a>
+                <input id="searchbar" onkeyup="search_templates()" name="search" type="text" placeholder="search your web template....">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                
         
-    </div>
+            </div>
+        </section>
+        
+        <div class="casing">
+            <div class="container">
+                <div class="temp-cont">
+                    <div class="templates"><a href="">Loading...</a></div>
+                    <div class="templates">Loading...</div>
+                    <div class="templates">Loading...</div>
+
+                    
+                </div>
+                <div class="temp-cont">
+                    <div class="templates">Loading...</div>
+                    <div class="templates">Loading...</div>
+                    <div class="templates">Loading...</div>
+
+                    
+                </div>
+                <div class="temp-cont">
+                    <div class="templates">Loading...</div>
+                    <div class="templates">Loading...</div>
+                    <div class="templates">Loading...</div>
+
+                    
+                </div>
+                <div class="temp-cont">
+                    <div class="templates">Loading...</div>
+                    <div class="templates">Loading...</div>
+                    <div class="templates">Loading...</div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
     
     <script src="./js/jquery3.7.1.min.js"></script>
     <script src="./js/main.js"></script>
-    
 </body>
 </html>

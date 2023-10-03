@@ -124,12 +124,35 @@ h3.definition{
     margin: 10px;
 }
 
+main .casing{
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;  
+}
+main .casing .container{
+    padding: 4rem 0;
+}
+main .casing .container .temp-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+main .casing .container .temp-cont .templates{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
 main .blog{
     background: url(../assets/pattern.png);
     background-repeat: no-repeat;
     background-position: right;
     height: 100vh;
     width: 100%;
+    padding-top: 3rem;
     background-size: 65%;
 }
 
@@ -149,6 +172,7 @@ main .blog-post .blog-content{
     margin: 3rem 2rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
+
 main .blog-content .blog-title{
     padding: 2rem 0;
 }
@@ -167,7 +191,7 @@ main .blog-content img{
     margin: 0 5vw;
 }
 .collapse{
-    height: 25rem;
+    height: 26rem;
 }
 main section .small-intro{
     position: relative;
@@ -177,6 +201,12 @@ main section .small-intro{
     font-size: 2rem;
 }
 
+@media only screen and (max-width:770px){
+    main .casing .container .temp-cont{
+        display: inline-block;
+        width: 100%;
+    }
+}
 
 @media only screen and (max-width: 545px){
     .nav .nav-menu, .nav-items{
