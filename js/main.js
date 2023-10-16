@@ -32,6 +32,14 @@ $(document).ready(function(){
         $nav.toggleClass('collapse');
     })
 
+    $products = $('.products')
+    $extras = $('.extras')
+
+    $products.click(function(){
+        $extras.toggleClass('show');
+        $nav.toggleClass('increase')
+    })
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,

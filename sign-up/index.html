@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="icon" href="../assets/miko logo.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/MAIN.CSS">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-menu flex-row">
+        <div class="nav-brand">
+            <img src="../assets/miko logo.png" style="height: 50px; width: 50px; padding: 0.5rem 0.8rem 0rem 0rem;" alt="logo">
+            <a href="#" class="text-gray">MIKO TEMPLATE</a>
+        </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-items">
+                <a href="../index.html">
+                    <li class="nav-link">
+                        Home
+                    </li>
+                </a>
+                
+                    <li class="nav-link products">
+                        <b>Product</b>
+                        <div class="extras">
+                            <a href="../templates.html"><h3>Templates</h3></a>
+                            <a href="#"><h3>Services</h3></a>
+                        </div>
+                    </li>
+                    
+                
+                <a href="../about.html">
+                    <li class="nav-link">
+                        About
+                    </li>
+                </a>
+                <a href="../contact.html">
+                    <li class="nav-link">
+                        Contact
+                    </li>
+                </a>
+                <a href="../support.html">
+                    <li class="nav-link">
+                        Our team
+                    </li>
+                </a>
+                
+               
+            </ul>
+            
+        </div>
+    </div>
+
+</nav>
+  <h1>Sign Up</h1>
+
+  <form action="/signup" method="post">
+    
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+    <select name="gender" required>
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+
+    </select>
+    <input type="submit" value="Sign Up">
+  </form>
+  <script src="../js/jquery3.7.1.min.js"></script>
+
+  
+  <script src="../js/main.js"></script>
+</body>
+</html>

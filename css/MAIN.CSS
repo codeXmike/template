@@ -7,7 +7,7 @@ background: var(--background);
 html, body{
     margin: 0%;
     box-sizing: border-box;
-    overflow-x: hidden;
+    justify-self:center;
 }
 
 :root{
@@ -42,8 +42,10 @@ a{
     padding: 0 2rem;
     height: 0rem;
     min-height: 12vh;
+    max-height: 12vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
+    width: 100%;
 }
 .nav .nav-brand{
     display: flex;
@@ -68,12 +70,35 @@ a{
     font-family: var(--Michael);
     cursor: pointer;
 }
-.nav .nav-menu .nav-link:hover a{
+.nav .nav-menu .nav-link:hover{
     color: var(--hover);
 }
 .nav .nav-menu .nav-link:hover{
     
     background-color: darkslategrey;
+}
+.extras{
+    display: none;
+}
+.extras a h3{
+    font-family: var(--Michael);
+    font-size: 0.8rem;
+}
+.extras a h3:hover{
+    color: var(--hover);
+    
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: var(--Michael);
+
+}
+
+
+.increase{
+    min-height: 20vh;
 }
 .nav .nav-menu{
     justify-content:  space-between;
@@ -103,6 +128,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 .search i{
 
@@ -145,6 +171,17 @@ main .casing .container .temp-cont .templates{
     width: 80%;
     margin: 3rem 2rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+main .casing .container .temp-cont .templates img{
+    width: 350px;
+    height: 450px;
+}
+.btn-get{
+    padding: .3rem 1rem;
+    font-size: 2rem;
+    background: var(--sky);
+    margin: .5rem;
+    border-radius: 19px;
 }
 main .blog{
     background: url(../assets/pattern.png);
@@ -200,23 +237,52 @@ main section .small-intro{
     font-family: var(--Michael);
     font-size: 2rem;
 }
-
+.welcoming{
+    height: 12vh;
+    text-align: center;
+}
+h1.welcome{
+    font-family: var(--Michael);
+    font-size: 2rem;
+    color: var(--text-links);
+}
+button.sign-up{
+    margin: 5px;
+    padding: 0.9rem 1.3rem;
+    border-radius:  15%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    font-family: var(--Michael);
+    
+}
 @media only screen and (max-width:770px){
+    .nav{
+        max-height: 23rem;
+    }
     main .casing .container .temp-cont{
         display: inline-block;
         width: 100%;
+        margin: 0 3rem;
+        
+    }
+    main .casing .container .temp-cont .templates{
+        width: 90;
+    }
+    
+    main .casing .container .temp-cont .templates img{
+        width: 100%;
+        
     }
 }
 
 @media only screen and (max-width: 545px){
+    .nav{
+        max-height: 26rem;
+    }
     .nav .nav-menu, .nav-items{
       flex-direction: column; 
     }
-    .sign-up{
-        width: 400px;
-        
-        padding:3% 0%;
-        }
+
     b.long{
         display: none;
     }
@@ -226,6 +292,9 @@ main section .small-intro{
     main section .small-intro{
        
         font-size: 1rem;
+    }
+    .search{
+        padding: auto;
     }
 
 }

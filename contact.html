@@ -10,10 +10,12 @@
 </head>
 <style>
    
-
+body{
+    text-align: center;
+}
     .telegram{
-        text-align: center;
-        padding: 3rem 0rem;
+
+        padding: 3rem 6rem;
     }
     .telegram a{
 text-decoration: none;
@@ -26,15 +28,49 @@ color: var(--text-links);
 color: rgb(30, 0, 138);
 
     }
+    .top{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0 15rem;
+    }
+    .bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0 15rem;
+    }
+    .facebook{
+  
+        padding: 3rem 6rem;
+    }
+    .facebook a{
+        text-decoration: none;
+        color: var(--text-links);
+    }
+    .facebook a:hover{
+        color: rgb(30, 0, 138);
+    }
     .whatsapp{
-        text-align: center;
-        padding: 4rem 0rem;
+ 
+        padding: 4rem 6rem;
     }
     .whatsapp a{
         color: var(--text-links);
         text-decoration: none;
     }
     .whatsapp a:hover{
+        color: rgb(30, 0, 138);
+    }
+    .instagram{
+
+        padding: 4rem 6rem;
+    }
+    .instagram a{
+        color: var(--text-links);
+        text-decoration: none;
+    }
+    .instagram a:hover{
         color: rgb(30, 0, 138);
     }
     hr{
@@ -80,29 +116,34 @@ color: rgb(30, 0, 138);
             </div>
             <div>
                 <ul class="nav-items">
-                    <a href="#">
+                    <a href="index.html">
                         <li class="nav-link">
-                            <a href="index.html">Home</a>
+                            Home
                         </li>
                     </a>
-                    <a href="#">
+                    
+                        <li class="nav-link products">
+                            <b>Product</b>
+                            <div class="extras">
+                                <a href="templates.html"><h3>Templates</h3></a>
+                                <a href="#"><h3>Services</h3></a>
+                            </div>
+                        </li>
+                        
+                    
+                    <a href="about.html">
                         <li class="nav-link">
-                            <a href="templates.html"><b>Product</b></a>
+                            About
                         </li>
                     </a>
-                    <a href="#">
+                    <a href="contact.html">
                         <li class="nav-link">
-                            <a href="about.html">About</a>
+                            Contact
                         </li>
                     </a>
-                    <a href="#">
+                    <a href="support.html">
                         <li class="nav-link">
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="nav-link">
-                            <a href="support.html">Our team</a>
+                            Our team
                         </li>
                     </a>
                     
@@ -114,16 +155,32 @@ color: rgb(30, 0, 138);
 
     </nav>
     <h1 style="text-align: center; color: rgb(55, 56, 56); font-size: 2rem;">Contact Us</h1>
-<div class="telegram">
-    <a href="https://t.me/codeXmike"><h2>Via Telegram<i class="fa-brands fa-telegram" style="padding-left: 10px; padding-top: 3px;"></i></h2> </a>
+<div class="top">
+    <div class="telegram">
+        <a href="https://t.me/codeXmike"><h2>Via Telegram<i class="fa-brands fa-telegram" style="padding-left: 10px; padding-top: 3px;"></i></h2> </a>
+        
     
-
+    </div>
+    <div class="facebook">
+        <a href="https://www.facebook.com/profile.php?id=61552424403323&mibextid=LQQJ4d"><h2>Via Facebook<i class="fa-brands fa-facebook" style="padding-left: 10px; padding-top: 3px;"></i></h2> </a>
+        
+    
+    </div>
 </div>
+
 <hr>
+<div class="bottom">
     <div class="whatsapp">
         <a href="https://wa.me/+2348053057575"><h2>Via Whatsapp<i class="fa-brands fa-whatsapp" style="padding-left: 10px; padding-top: 3px;"></i></h2></a>
         
     </div>
+    <div class="instagram">
+        <a href="https://t.me/codeXmike"><h2>Via Instagram<i class="fa-brands fa-instagram" style="padding-left: 10px; padding-top: 3px;"></i></h2> </a>
+        
+    
+    </div>
+</div>
+    
     
     <script src="./js/jquery3.7.1.min.js"></script>
     <script src="./js/main.js"></script>

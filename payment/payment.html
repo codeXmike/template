@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miko Templates payment</title>
+    <link rel="icon" href="../assets/miko logo.png">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/MAIN.CSS">
+</head>
+<script type="text/javascript" src="https://sdk.monnify.com/plugin/monnify.js"></script>
+<style>
+
+.payment{
+    padding: 10rem 30rem;
+   text-align: center;
+   max-width: 490px;
+   min-width: 480px;
+}
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+form .container .pay{
+    background-color: blue;
+    color: aliceblue;
+
+    text-align: center;
+    padding: 0.9rem 0.9rem;
+    border-radius: 23px;
+    box-shadow: 0 15px 20px 15px rgba(0, 0, 0, 0.3);
+}
+label{
+    font-size: 1rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+input{
+    height: 25px;
+}
+</style>
+<body class="payment-body">
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <img src="../assets/miko logo.png" style="height: 50px; width: 50px; padding: 0.5rem 0.8rem 0rem 0rem;" alt="logo">
+                <a href="#" class="text-gray">MIKO TEMPLATE</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <a href="../index.html">
+                        <li class="nav-link">
+                            Home
+                        </li>
+                    </a>
+                    
+                        <li class="nav-link products">
+                            <b>Product</b>
+                            <div class="extras">
+                                <a href="../templates.html"><h3>Templates</h3></a>
+                                <a href="#"><h3>Services</h3></a>
+                            </div>
+                        </li>
+                        
+                    
+                    <a href="../about.html">
+                        <li class="nav-link">
+                            About
+                        </li>
+                    </a>
+                    <a href="../contact.html">
+                        <li class="nav-link">
+                            Contact
+                        </li>
+                    </a>
+                    <a href="../support.html">
+                        <li class="nav-link">
+                            Our team
+                        </li>
+                    </a>
+                    
+                   
+                </ul>
+                
+            </div>
+        </div>
+
+    </nav>
+    <div class="payment">
+        <form action="" id="payment">
+        <div class="container">
+            <label for="customerName">Customer Name</label>
+            <input type="text" id="customerName" required name="customerName">
+        </div>
+        <br>
+        <div class="container">
+            <label for="customerEmail">Customer Email</label>
+            <input type="text" id="customerEmail" required name="customerEmail">
+        </div>
+        <br>
+        <div class="container">
+            <label for="customerPhone">Customer Phone</label>
+            <input type="text" id="customerPhone" required name="customerPhone">
+        </div>
+        <br>
+        <div class="container">
+            <buuttton class="pay" type="buuttton" onclick="pay()">PAY</buuttton>
+        </div>
+        
+        </form>   
+    </div>
+    <script>
+         //DATA\\
+        function pay() {
+            const customerName = document.getElementById("customerName").value
+        const customerEmail = document.getElementById("customerEmail").value
+        const customerPhone = document.getElementById("customerPhone").value
+        
+       MonnifySDK.initialize({
+        amount: 1000,
+        currency: "NGN",
+        reference: "CK_" + Math.floor((Math.random() * 1000000000) + 1),
+        customerName:customerName,
+        customerEmail: customerEmail,
+        customerPhone: customerPhone,
+        apiKey: "MK_TEST_RTDF3VEG99",
+        contractCode: "0135869677",
+        paymentDescription: "Test pay",
+        isTestMode: true,
+        onComplete: function (response) {
+            //completion\\
+            //console.log(response);
+            const paymentSuccessful = true;
+            if(paymentSuccessful){
+                window.location.href="C:/Users/Admin/OneDrive/Desktop/WEB TEMPLATES/1ST TEMPLATE/payment/paysuccess.html"
+            }
+            else{
+
+            }
+        },
+        onClose: function (data) {
+            window.location.href="C:/Users/Admin/OneDrive/Desktop/WEB TEMPLATES/1ST TEMPLATE/payment/payment.html"
+            }
+        
+       });
+    }
+
+    </script>
+    <script src="../js/jquery3.7.1.min.js"></script>
+
+
+
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>
