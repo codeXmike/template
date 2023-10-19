@@ -228,7 +228,7 @@ main .blog-content img{
     margin: 0 5vw;
 }
 .collapse{
-    height: 26rem;
+    height: 27em;
 }
 main section .small-intro{
     position: relative;
@@ -257,7 +257,7 @@ button.sign-up{
 }
 @media only screen and (max-width:770px){
     .nav{
-        max-height: 23rem;
+        max-height: 12vh;
     }
     main .casing .container .temp-cont{
         display: inline-block;
@@ -277,7 +277,8 @@ button.sign-up{
 
 @media only screen and (max-width: 545px){
     .nav{
-        max-height: 26rem;
+        max-height: 27rem;
+        min-height: 12vh;
     }
     .nav .nav-menu, .nav-items{
       flex-direction: column; 
