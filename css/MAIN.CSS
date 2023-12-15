@@ -2,12 +2,14 @@
 
 body{
 background: var(--background);
+outline: none;
 }
 
 html, body{
-    margin: 0%;
-    box-sizing: border-box;
+    margin: 0% 0.1rem;
+    
     justify-self:center;
+    outline: none;
 }
 
 :root{
@@ -50,12 +52,14 @@ a{
 .nav .nav-brand{
     display: flex;
     flex-direction: row;
+    outline: none;
 }
 .nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
     font-family:var(--Anton);
+    outline: none;
 
 }
 .nav .nav-items{
@@ -79,10 +83,16 @@ a{
 }
 .extras{
     display: none;
+    background-color: rgb(63, 63, 63);
+    text-align: center;
+    width: 103px;
+    border-radius: 0 0 15% 15%;
 }
 .extras a h3{
     font-family: var(--Michael);
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    color: white;
+    
 }
 .extras a h3:hover{
     color: var(--hover);
@@ -93,17 +103,20 @@ a{
     flex-direction: column;
     margin: 0;
     font-family: var(--Michael);
-
+    position: absolute;
+    left: 1025px;
+    top: 11.4vh;
 }
 
 
-.increase{
+/* .increase{
     min-height: 20vh;
-}
+} */
 .nav .nav-menu{
     justify-content:  space-between;
 }
 .nav .toggle-collapse{
+    outline: none;
     position: absolute;
     top: 0%;
     width: 90%;
@@ -111,11 +124,13 @@ a{
     display: none;
 }
 .nav .toggle-collapse .toggle-icon{
+    outline: none;
     display: flex;
     justify-content: flex-end;
     padding: 1.7rem 0;
 }
 .nav .toggle-collapse .toggle-icon i{
+    outline: none;
     color: rgb(10, 14, 32);
     font-size: 2rem;
 }
@@ -282,6 +297,7 @@ button.sign-up{
     }
     .nav .nav-menu, .nav-items{
       flex-direction: column; 
+      z-index: 1;
     }
 
     b.long{
@@ -297,5 +313,14 @@ button.sign-up{
     .search{
         padding: auto;
     }
-
+    .show{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-family: var(--Michael);
+        position: absolute;
+        left: 200px;
+        top: 39vh;
+        z-index: 2;
+    }
 }
