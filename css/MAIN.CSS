@@ -104,7 +104,7 @@ a{
     margin: 0;
     font-family: var(--Michael);
     position: absolute;
-    left: 1025px;
+    left: 75vw;
     top: 11.4vh;
 }
 
@@ -134,10 +134,7 @@ a{
     color: rgb(10, 14, 32);
     font-size: 2rem;
 }
-/*main{
 
-  
-}*/
 .search{
     padding-top: 50px;
     display: flex;
@@ -246,7 +243,7 @@ main .blog-content img{
     height: 27em;
 }
 main section .small-intro{
-    position: relative;
+    
     padding-top: 9rem;
     text-align: center;
     font-family: var(--Michael);
@@ -291,6 +288,9 @@ button.sign-up{
 }
 
 @media only screen and (max-width: 545px){
+    main{
+        z-index: 3;
+    }
     .nav{
         max-height: 27rem;
         min-height: 12vh;
@@ -306,6 +306,15 @@ button.sign-up{
     .nav .toggle-collapse{
         display: initial;
     }
+    button.sign-up{
+        margin: 5px;
+        padding: 0.9rem 1.3rem;
+        border-radius:  15%;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+        font-size: 1rem;
+        font-family: var(--Michael);
+        
+    }
     main section .small-intro{
        
         font-size: 1rem;
@@ -320,7 +329,7 @@ button.sign-up{
         font-family: var(--Michael);
         position: absolute;
         left: 200px;
-        top: 39vh;
+        top: 215px;
         z-index: 2;
     }
 }
